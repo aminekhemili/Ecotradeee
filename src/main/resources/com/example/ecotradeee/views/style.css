@@ -1,0 +1,36 @@
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a2a2a;
+}
+
+.text-field, .combo-box, .text-area, .date-picker {
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #ccc;
+    -fx-padding: 8px;
+}
+
+.btn {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.btn:hover {
+    -fx-background-color: #45a049;
+}
+
+.btn-cancel {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.btn-cancel:hover {
+    -fx-background-color: #da190b;
+}

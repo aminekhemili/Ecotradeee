@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.EventListController"
+      spacing="20" alignment="CENTER" padding="20">
+
+    <Label text="Add New Event" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="titleField" promptText="Event Title" maxWidth="300"/>
+
+    <TextArea fx:id="descriptionField" promptText="Description" prefRowCount="4" maxWidth="300"/>
+
+    <DatePicker fx:id="datePicker" maxWidth="300"/>
+
+    <ComboBox fx:id="categoryComboBox" promptText="Select Category" maxWidth="300"/>
+
+    <HBox spacing="10">
+        <Button text="Browse Image" onAction="#handleBrowse"/>
+        <Label fx:id="imagePathLabel" text="No file chosen"/>
+    </HBox>
+
+    <ImageView fx:id="imagePreview" fitHeight="150" fitWidth="150" preserveRatio="true"/>
+
+    <Button text="Add Event" onAction="#handleAddEvent" style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+
+</VBox>

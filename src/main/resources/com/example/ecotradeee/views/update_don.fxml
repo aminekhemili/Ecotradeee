@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.UpdateDonationController">
+    <children>
+        <VBox spacing="10" alignment="CENTER" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+            <Label text="Update Donation" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <TextField fx:id="donorNameField" promptText="Donor Name"/>
+            <TextField fx:id="amountField" promptText="Amount"/>
+            <TextField fx:id="messageField" promptText="Message"/>
+            <DatePicker fx:id="datePicker"/>
+            <Button text="Update Donation" onAction="#handleUpdateDonation" style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+        </VBox>
+    </children>
+</AnchorPane>

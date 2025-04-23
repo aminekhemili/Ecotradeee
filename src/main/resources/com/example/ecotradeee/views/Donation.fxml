@@ -1,0 +1,18 @@
+<?import javafx.scene.layout.HBox?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import java.lang.String?>
+<HBox spacing="10" alignment="CENTER_LEFT">
+    <TextField fx:id="searchField" promptText="Search by donor name..." />
+    <ComboBox fx:id="sortComboBox" promptText="Sort by">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Amount (Low to High)" />
+                <String fx:value="Amount (High to Low)" />
+                <String fx:value="Date (Newest First)" />
+                <String fx:value="Date (Oldest First)" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+</HBox>
